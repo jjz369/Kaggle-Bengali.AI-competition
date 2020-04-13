@@ -8,11 +8,11 @@ Author: Jingjie Zhang (jjzhang369@gmail.com); Mingda Zhu (mdzhu.pku@gmail.com)
 
 # Table of Contents
 
-*   [Solution Overview](##solution-overview)
+*   [Solution Overview](#solution-overview)
 *   [Directory Layout](#directory-layout)
 *   [Installation](#installation)
-    *   [Download the data](#download-data)
-    *   [Install the Requirements](#requirements)
+    *   [Download the data](##download-data)
+    *   [Install the Requirements](##install-requirements)
 *   [Usage](#usage)
     *   [Training](#training)
     *   [Inference](#inference)
@@ -27,7 +27,7 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 
 <br>
 <div align="center">
-  <img src="./solution_overview.jpg" width = "1000", height = "600">
+  <img src="./solution_overview.jpg" width = "800", height = "500">
 </div>
 
 # Directory Layout
@@ -47,19 +47,34 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 # Installation 
 -----
 
-## Download the data
+## Download data
 * Clone this repo to your local computer 
 * Download the complete datasets from the kaggle Bengali.AI competition page [here](https://www.kaggle.com/c/bengaliai-cv19/data) and unzip them in the ```./input``` folder. 
+* You can use the [kaggle API](https://github.com/Kaggle/kaggle-api): ```kaggle competitions download -c 'bengaliai-cv19'```
 * The testing datasets are provided for inference/test purposes. 
 
-## Install the requirements
+
+## Install requirements
 * Install the requirements using ```pip install -r requirements.txt```
-* Make sure to use the python 3 version and tensorflow 1.x version. (we recommend using [Anaconda](https://anaconda.org/anaconda/python))
+* Make sure to use the python 3 version and tensorflow 1.x version. 
 * A new virtual enviroment is recommended to have a clean package setup.
+* Runing this project requires using GPU. We suggest using the [Google Colab](https://colab.research.google.com)
 
 # Usage
 -----
 
+## Training
+
+* Preprocess the image data. 
+
+  In the ./src folder, run: 
+  ~~~
+  $python preprocess.py -tr -s 1.25 
+  ~~~
+  
+  1.25 is a scale factor to scale the image from 137x236 to 171x295
+  
+  
 
 
                          

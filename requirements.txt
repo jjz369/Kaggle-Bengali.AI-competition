@@ -1,0 +1,8 @@
+numpy
+pandas
+opencv-python
+tqdm
+tensorflow-gpu==1.15
+iterative-stratification
+efficientnet
+image-classifiers==0.2.2
