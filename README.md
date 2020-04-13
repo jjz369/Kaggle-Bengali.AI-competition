@@ -65,14 +65,37 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 
 ## Training
 
-* Preprocess the image data. 
+* **Preprocess** the image data. This step read, resize and normalize images, and save them to the `./input/train/` folder. 
 
-  In the ./src folder, run: 
+  In the `./src` folder, run: 
   ~~~
   $python preprocess.py -tr -s 1.25 
   ~~~
   
-  1.25 is a scale factor to scale the image from 137x236 to 171x295
+  `-s 1.25` is a scale factor to scale the image from 137x236 to 171x295. It can be any meaninnful float number. 
+  
+* **train** the model:
+   
+  In this `./src` folder, run:
+  ~~~
+  $python train.py -s 1.25 -n 200 -lr 0.001 -m "B3" 
+  ~~~  
+   
+  `-s 1.25` is a scale factor that scaled the image. Should be the same as the preprocess step. 
+  `-n 200` number of epochs to train the model. If not given, 200 will be used. 
+  `-lr 0.001` initial learning rate. The training process uses the [SGDR: STOCHASTIC GRADIENT DESCENT](https://arxiv.org/pdf/1608.03983.pdf). 
+  `-m "B3"` the backbone model. The options are "B3" and "Seresnext50". 
+  
+  The trained model weights will be saved in the `./model` folder and can be used in the **inference** step. 
+  
+## Inference
+
+
+  
+  
+
+
+
   
   
 

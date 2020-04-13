@@ -146,7 +146,7 @@ def main():
                         help = "Initial learning rate")
     
     parser.add_argument("-m", "--model", type = str, choices=["B3", "Seresnext50"],
-                        help = "Initial learning rate")
+                        help = "The pretrained model")
 
     
     args = parser.parse_args()
