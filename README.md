@@ -25,7 +25,10 @@ Author: Jingjie Zhang (jjzhang369@gmail.com); Mingda Zhu (mdzhu.pku@gmail.com)
 
 The solution is an ensemble model with backbone of [EfficientNet B3](https://github.com/qubvel/efficientnet) and [Seresnext50](https://github.com/qubvel/classification_models). 
 
-![](./solution_overview.jpg | width = 500)
+<br>
+<div align="center">
+  <img src="./solution_overview.jpg" width = "1000", height = "600">
+</div>
 
 # Directory Layout
 -----
