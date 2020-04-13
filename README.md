@@ -26,7 +26,7 @@ Author: Jingjie Zhang (jjzhang369@gmail.com); Mingda Zhu (mdzhu.pku@gmail.com)
 The solution is an ensemble model with backbone of [EfficientNet B3](https://github.com/qubvel/efficientnet) and [Seresnext50](https://github.com/qubvel/classification_models). 
 <br>
 <div align="center">
-  <img src="./solution_overview.jpg" style="width:80%; height:80%">
+  <img src="./solution_overview.jpg">
 </div>
 
 # Directory Layout
@@ -48,5 +48,17 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 
 ## Download the data
 * Clone this repo to your local computer 
-* Download the data from the kaggle Bengali.AI competition page [here](https://www.kaggle.com/c/bengaliai-cv19/data).
+* Download the complete datasets from the kaggle Bengali.AI competition page [here](https://www.kaggle.com/c/bengaliai-cv19/data) and unzip them in the ```./input``` folder. 
+* The testing datasets are provided for inference/test purposes. 
+
+## Install the requirements
+* Install the requirements using ```pip install -r requirements.txt```
+* Make sure to use the python 3 version and tensorflow 1.x version. (we recommend using [Anaconda](https://anaconda.org/anaconda/python))
+* A new virtual enviroment is recommended to have a clean package setup.
+
+# Usage
+-----
+
+
+
                          
