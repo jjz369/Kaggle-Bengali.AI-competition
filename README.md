@@ -92,13 +92,13 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 
   In the `./src` folder, run:
   ~~~
-  $python inference.py -s 1.25 -b3 "../model/model_B3.h5" -se "../model/model_Seresnext50.h5"
+  $python inference.py -s 1.25 -b3 "../model/model_B3.h5" 
   ~~~  
   
   - `-s 1.25` is a scale factor that to scale the image. Should be the same as the training step. 
   - `-b3 "../model/model_B3.h5"` to specify the saved weights for the B3 model. 
-  - `-se "../model/model_Seresnext50.h5"` to specify the saved weights for the Se-resnext50 model. 
-  -  If both "-b3" and "-se" are given, an ensemble of these two models will be used. 
+  - If you want to use Se-resnext50 models, use `-se "../model/model_Seresnext50.h5"` to specify the saved weights for the Se-resnext50 model. 
+  - If both "-b3" and "-se" are given, an ensemble of these two models will be used. 
   
 # Extending this
 -----
