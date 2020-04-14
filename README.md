@@ -2,7 +2,7 @@
 
 Classify the components of handwritten Bengali. This is a kaggle competition hosted from 2019-12-20 to 2020-03-16. Link to the competition page [Kaggle Bengali.AI](https://www.kaggle.com/c/bengaliai-cv19/overview).
 
-This project won a bronze medal with a ranking of 171/2059 in the competition  (top 9%). 
+This project won a bronze medal with a ranking of top 9% in the competition. 
 
 Author: Jingjie Zhang (jjzhang369@gmail.com); Mingda Zhu (mdzhu.pku@gmail.com)
 
@@ -65,14 +65,14 @@ The solution is an ensemble model with backbone of [EfficientNet B3](https://git
 
 ## Training
 
-* **Preprocess** the image data. This step read, resize and normalize images, and save them to the `./input/train/` folder. 
+* **Preprocess** the image data. This module reads, resizes and normalizes images, and saves them to the `./input/train/` folder. 
 
   In the `./src` folder, run: 
   ~~~
   $python preprocess.py -tr -s 1.25 
   ~~~
   
-  `-s 1.25` is a scale factor to scale the image from 137x236 to 171x295. It can be any meaninnful float number. 
+  `-s 1.25` is a scale factor to scale the image from 137x236 to 171x295. It can be any meaningful float number. 
   
 * **train** the model:
    
