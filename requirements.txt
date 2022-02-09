@@ -2,7 +2,7 @@ numpy
 pandas
 opencv-python
 tqdm
-tensorflow-gpu==1.15.2
+tensorflow-gpu==2.5.3
 iterative-stratification
 efficientnet
 image-classifiers==0.2.2
